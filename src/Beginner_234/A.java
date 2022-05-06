@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 
 public class A {
 
+	public static int func(int t) {
+		return t*t + t * 2 + 3;
+	}
+	
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
@@ -14,9 +18,5 @@ public class A {
 		
 		int ans = func(func(func(t) + t) + func(func(t)));
 		System.out.println(ans);
-	}
-	
-	public static int func(int t) {
-		return t*t + t * 2 + 3;
 	}
 }
