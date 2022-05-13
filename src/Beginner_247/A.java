@@ -12,8 +12,10 @@ public class A {
 		
 		String str = br.readLine();
 		
-		str = '0' + str;	// 첫 문자는 0 이다.
-		str = str.substring(0, str.length() - 1);
+		// 첫 문자는 0 이다.
+		str = '0' + str;	
+		//substring(처음값, 마지막값)
+		str = str.substring(0, str.length() - 1);	
 		System.out.println(str);
 	}
 }
